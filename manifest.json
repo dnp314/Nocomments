@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Code Comment Remover",
+  "version": "1.0",
+  "description": "Removes comments from copied code in various programming languages",
+  "permissions": ["clipboardWrite", "clipboardRead"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png"    
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png"
+  }
+}

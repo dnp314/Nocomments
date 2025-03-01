@@ -1,0 +1,71 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Code Comment Remover</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      padding: 10px;
+    }
+    h1 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    button {
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #3b78e7;
+    }
+    .success {
+      color: green;
+      margin-top: 10px;
+      display: none;
+    }
+    select {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Code Comment Remover</h1>
+  <p>Remove comments from copied code with a single click!</p>
+  
+  <select id="language-select">
+    <option value="auto">Auto-detect</option>
+    <option value="javascript">JavaScript/TypeScript</option>
+    <option value="python">Python</option>
+    <option value="java">Java/C#</option>
+    <option value="cpp">C/C++</option>
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="php">PHP</option>
+    <option value="ruby">Ruby</option>
+    <option value="go">Go</option>
+    <option value="rust">Rust</option>
+    <option value="swift">Swift</option>
+  </select>
+  
+  <button id="remove-comments">Remove Comments from Clipboard</button>
+  <p id="success-message" class="success">Comments removed successfully!</p>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
