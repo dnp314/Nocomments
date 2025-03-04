@@ -1,1 +1,1 @@
-# Browser Extension to reomve comments
+# Browser Extension to remove comments
